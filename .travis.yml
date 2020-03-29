@@ -11,6 +11,6 @@ branches:
     
 before_install:
  - sudo gem install fastlane
-
+ - sudo xcode-select -s /Applications/Xcode.app
 script:
  - fastlane archive
