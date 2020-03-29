@@ -9,9 +9,3 @@ lane :archive do
 	
   pgyer(api_key: "a215682d481d742271b61aabfe1baffe", user_key: "06c794bc27fbe97b626a3a21f12419f5",password: "12345678", update_description: "test ddd")
 end
-
-lane: build do
- enable_automatic_code_signing
- increment_build_number
- gym
-end
