@@ -1,0 +1,11 @@
+
+lane :archive do
+
+  puts "请输入版本描述信息："
+  desc = STDIN.gets
+
+  build_app(export_method: "ad-hoc", export_xcargs: "-allowProvisioningUpdates", output_directory: "~/Desktop/outputAPI")
+  
+	
+  pgyer(api_key: "a215682d481d742271b61aabfe1baffe", user_key: "06c794bc27fbe97b626a3a21f12419f5",password: "12345678", update_description: "#{desc}")
+end
