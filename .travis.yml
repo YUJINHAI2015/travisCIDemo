@@ -1,9 +1,16 @@
-osx_image: xcode 11.3
-language: swift
-os: osx
-xcode_project: TravisCIDemo.xcodeproj
-xcode_scheme: TravisCIDemo
-xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+#osx_image: xcode 11.3
+#language: swift
+#os: osx
+#xcode_project: TravisCIDemo.xcodeproj
+#xcode_scheme: TravisCIDemo
+#xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+
+language: objective-c #1
+osx_image: xcode6.4 #2
+xcode_project: TravisCIDemo.xcodeproj #3
+xcode_scheme: TravisCIDemo #4
+xcode_sdk: iphonesimulator8.4 #5
+
 #
 #branches:
 #  only:
