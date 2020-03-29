@@ -11,13 +11,12 @@ xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 #    - master
 #
 before_install:
- - brew update
- - brew install xctool
+# - brew update
+# - brew install xctool
 # - sudo gem install fastlane
 # - sudo gem cleanup
 # - sudo xcode-select -s /Applications/Xcode.app
 
-script: xctool -project TravisCIDemo.xcodeproj -scheme TravisCIDemo
-#script:
-#- xctool -workspace TravisCIDemo.xcodeproj -scheme TravisCIDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-#- xctool test -workspace TravisCIDemo.xcworkspace -scheme TravisCIDemoUITests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+
+script:
+ - xcodebuild -workspace TravisCIDemo.xcworkspace -scheme TravisCIDemo archive

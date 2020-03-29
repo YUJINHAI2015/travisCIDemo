@@ -12,20 +12,11 @@
 		243061EF242FB1EA006CE225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243061ED242FB1EA006CE225 /* Main.storyboard */; };
 		243061F1242FB1EC006CE225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 243061F0242FB1EC006CE225 /* Assets.xcassets */; };
 		243061F4242FB1EC006CE225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 243061F2242FB1EC006CE225 /* LaunchScreen.storyboard */; };
-		243062102430A468006CE225 /* TravisCIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2430620F2430A468006CE225 /* TravisCIDemoUITests.swift */; };
+		DDC8A8CBE16641F611A790D0 /* Pods_TravisCIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B05C6F9DC956795B21AA9CC /* Pods_TravisCIDemo.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		243062122430A468006CE225 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 243061DC242FB1EA006CE225 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 243061E3242FB1EA006CE225;
-			remoteInfo = TravisCIDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		1DE32DD1BC7C1D1C80BB24E4 /* Pods-TravisCIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIDemo.release.xcconfig"; path = "Target Support Files/Pods-TravisCIDemo/Pods-TravisCIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		243061E4242FB1EA006CE225 /* TravisCIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisCIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		243061E7242FB1EA006CE225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		243061EB242FB1EA006CE225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,9 +24,8 @@
 		243061F0242FB1EC006CE225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		243061F3242FB1EC006CE225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		243061F5242FB1EC006CE225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2430620D2430A468006CE225 /* TravisCIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisCIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2430620F2430A468006CE225 /* TravisCIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisCIDemoUITests.swift; sourceTree = "<group>"; };
-		243062112430A468006CE225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B05C6F9DC956795B21AA9CC /* Pods_TravisCIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83D7D35F2BF7E63A5218264A /* Pods-TravisCIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIDemo.debug.xcconfig"; path = "Target Support Files/Pods-TravisCIDemo/Pods-TravisCIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2430620A2430A468006CE225 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DDC8A8CBE16641F611A790D0 /* Pods_TravisCIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +44,9 @@
 			isa = PBXGroup;
 			children = (
 				243061E6242FB1EA006CE225 /* TravisCIDemo */,
-				2430620E2430A468006CE225 /* TravisCIDemoUITests */,
 				243061E5242FB1EA006CE225 /* Products */,
+				2F615DB2710D162CC24CDFD0 /* Pods */,
+				67C5E1250181FB8EA10BC2FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				243061E4242FB1EA006CE225 /* TravisCIDemo.app */,
-				2430620D2430A468006CE225 /* TravisCIDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,13 +71,22 @@
 			path = TravisCIDemo;
 			sourceTree = "<group>";
 		};
-		2430620E2430A468006CE225 /* TravisCIDemoUITests */ = {
+		2F615DB2710D162CC24CDFD0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2430620F2430A468006CE225 /* TravisCIDemoUITests.swift */,
-				243062112430A468006CE225 /* Info.plist */,
+				83D7D35F2BF7E63A5218264A /* Pods-TravisCIDemo.debug.xcconfig */,
+				1DE32DD1BC7C1D1C80BB24E4 /* Pods-TravisCIDemo.release.xcconfig */,
 			);
-			path = TravisCIDemoUITests;
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		67C5E1250181FB8EA10BC2FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B05C6F9DC956795B21AA9CC /* Pods_TravisCIDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 243061F8242FB1EC006CE225 /* Build configuration list for PBXNativeTarget "TravisCIDemo" */;
 			buildPhases = (
+				3E526E42D1D787000F664D9D /* [CP] Check Pods Manifest.lock */,
 				243061E0242FB1EA006CE225 /* Sources */,
 				243061E1242FB1EA006CE225 /* Frameworks */,
 				243061E2242FB1EA006CE225 /* Resources */,
@@ -116,24 +110,6 @@
 			productReference = 243061E4242FB1EA006CE225 /* TravisCIDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2430620C2430A468006CE225 /* TravisCIDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 243062142430A468006CE225 /* Build configuration list for PBXNativeTarget "TravisCIDemoUITests" */;
-			buildPhases = (
-				243062092430A468006CE225 /* Sources */,
-				2430620A2430A468006CE225 /* Frameworks */,
-				2430620B2430A468006CE225 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				243062132430A468006CE225 /* PBXTargetDependency */,
-			);
-			name = TravisCIDemoUITests;
-			productName = TravisCIDemoUITests;
-			productReference = 2430620D2430A468006CE225 /* TravisCIDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,10 +122,6 @@
 				TargetAttributes = {
 					243061E3242FB1EA006CE225 = {
 						CreatedOnToolsVersion = 11.3.1;
-					};
-					2430620C2430A468006CE225 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 243061E3242FB1EA006CE225;
 					};
 				};
 			};
@@ -167,7 +139,6 @@
 			projectRoot = "";
 			targets = (
 				243061E3242FB1EA006CE225 /* TravisCIDemo */,
-				2430620C2430A468006CE225 /* TravisCIDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,14 +154,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2430620B2430A468006CE225 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E526E42D1D787000F664D9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravisCIDemo-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		243061E0242FB1EA006CE225 /* Sources */ = {
@@ -202,23 +191,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		243062092430A468006CE225 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				243062102430A468006CE225 /* TravisCIDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		243062132430A468006CE225 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 243061E3242FB1EA006CE225 /* TravisCIDemo */;
-			targetProxy = 243062122430A468006CE225 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		243061ED242FB1EA006CE225 /* Main.storyboard */ = {
@@ -356,6 +329,7 @@
 		};
 		243061F9242FB1EC006CE225 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83D7D35F2BF7E63A5218264A /* Pods-TravisCIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +349,7 @@
 		};
 		243061FA242FB1EC006CE225 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE32DD1BC7C1D1C80BB24E4 /* Pods-TravisCIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,46 +364,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		243062152430A468006CE225 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M6BGSUZ2F4;
-				INFOPLIST_FILE = TravisCIDemoUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.foreverht.TravisCIDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TravisCIDemo;
-			};
-			name = Debug;
-		};
-		243062162430A468006CE225 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M6BGSUZ2F4;
-				INFOPLIST_FILE = TravisCIDemoUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.foreverht.TravisCIDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TravisCIDemo;
 			};
 			name = Release;
 		};
@@ -449,15 +384,6 @@
 			buildConfigurations = (
 				243061F9242FB1EC006CE225 /* Debug */,
 				243061FA242FB1EC006CE225 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		243062142430A468006CE225 /* Build configuration list for PBXNativeTarget "TravisCIDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				243062152430A468006CE225 /* Debug */,
-				243062162430A468006CE225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
