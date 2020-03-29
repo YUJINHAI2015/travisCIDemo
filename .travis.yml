@@ -9,4 +9,5 @@ branches:
   only:
     - master
 script:
+ - sudo gem install fastlane
  - fastlane archive
