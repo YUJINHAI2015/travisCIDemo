@@ -13,8 +13,5 @@ before_install:
  - sudo gem install fastlane
  - sudo gem cleanup
  - sudo xcode-select -s /Applications/Xcode.app
-#script:
-# - fastlane archive
-
 script:
-- fastlane scan
+ - fastlane archive
