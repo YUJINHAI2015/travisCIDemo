@@ -13,4 +13,4 @@ language: swift
 # - sudo gem install fastlane
 # - sudo gem cleanup
 # - sudo xcode-select -s /Applications/Xcode.app
-script: xcodebuild -workspace TravisExample.xcworkspace -scheme TravisExample -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+script: xcodebuild -workspace TravisCIDemo.xcworkspace -scheme TravisCIDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
