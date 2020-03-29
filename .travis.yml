@@ -3,7 +3,7 @@ language: swift
 os: osx
 xcode_project: TravisCIDemo.xcodeproj
 xcode_scheme: TravisCIDemo
-xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 8
+#xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 8
 
 branches:
   only:
