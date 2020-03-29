@@ -5,9 +5,9 @@ xcode_project: TravisCIDemo.xcodeproj
 xcode_scheme: TravisCIDemo
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
-branches:
-  only:
-    - master
+#branches:
+#  only:
+#    - master
     
 #before_install:
 # - sudo gem install fastlane
