@@ -9,4 +9,4 @@ branches:
   only:
     - master
 script:
- - fastlane scan
+ - fastlane archive
