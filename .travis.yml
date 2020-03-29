@@ -15,6 +15,6 @@ xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 # - sudo gem cleanup
 # - sudo xcode-select -s /Applications/Xcode.app
 
-script:
-- xctool -workspace TravisCIDemo.xcodeproj -scheme TravisCIDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-- xctool test -workspace TravisCIDemo.xcworkspace -scheme TravisCIDemoUITests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+#script:
+#- xctool -workspace TravisCIDemo.xcodeproj -scheme TravisCIDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+#- xctool test -workspace TravisCIDemo.xcworkspace -scheme TravisCIDemoUITests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
