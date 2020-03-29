@@ -409,6 +409,7 @@
 			baseConfigurationReference = 83D7D35F2BF7E63A5218264A /* Pods-TravisCIDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6BGSUZ2F4;
 				INFOPLIST_FILE = TravisCIDemo/Info.plist;
@@ -429,6 +430,7 @@
 			baseConfigurationReference = 1DE32DD1BC7C1D1C80BB24E4 /* Pods-TravisCIDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M6BGSUZ2F4;
 				INFOPLIST_FILE = TravisCIDemo/Info.plist;
@@ -447,6 +449,7 @@
 		243062422430E1FB006CE225 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TravisCIDemoUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -466,6 +469,7 @@
 		243062432430E1FB006CE225 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TravisCIDemoUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
