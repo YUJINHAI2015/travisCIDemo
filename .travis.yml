@@ -10,7 +10,8 @@ xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 #  only:
 #    - master
 #
-#before_install:
+before_install:
+ - brew update
 # - sudo gem install fastlane
 # - sudo gem cleanup
 # - sudo xcode-select -s /Applications/Xcode.app
