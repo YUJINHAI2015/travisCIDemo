@@ -17,5 +17,5 @@ before_install:
 # - sudo gem cleanup
 # - sudo xcode-select -s /Applications/Xcode.app
 
-script
+script:
  - xcodebuild -workspace TravisCIDemo.xcworkspace -scheme TravisCIDemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
