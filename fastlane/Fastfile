@@ -32,3 +32,11 @@ EOF
   # )
 end
 
+lane :beta do
+  match(type: "development", readonly: is_ci)
+
+  gym(scheme: "TravisCIDemo",export_method: "ad-hoc")
+end
+
+
+

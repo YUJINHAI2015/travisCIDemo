@@ -6,29 +6,8 @@ xcode_scheme: TravisCIDemo
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
 
-before_script:
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/HeJingBigMemberYiHe_DevelopmentProfile.mobileprovision.enc -d -a -out scripts/profile/HeJingBigMemberYiHe_DevelopmentProfile.mobileprovision
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/develop.cer.enc -d -a -out scripts/certs/develop.cer
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/develop.p12.enc -d -a -out scripts/certs/develop.p12
-
-- ./scripts/add-key.sh
-- ./scripts/update-bundle.sh
-
-
 script:
- - xcodebuild -workspace TravisCIDemo.xcworkspace -scheme TravisCIDemo -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 'CODE_SIGN_RESOURCE_RULES_PATH=$(SDKROOT)/ResourceRules.plist'
-  
-after_success:
- - ./scripts/sign-and-upload.sh
-after_script:
- - ./scripts/remove-key.sh
-
+ - fastlane beta
     
-env:
-  global:
-  - APP_NAME="TravisCIDemo"
-  - DEVELOPER_NAME="iPhone Developer"
-  - PROFILE_NAME="HeJingBigMemberYiHe_DevelopmentProfile"
-  - secure: L40il6W/GfjIIhnHzpsa8u5Q3HyOShOCmoJm8jGSKN7dNPvA2XLxTuI2sickdWQu9uAT6rzOAgOf93ZFvUGGAr7i3jSwnldKYZSCkf6cc0NvS60lQZE6YT6iVvSJIJ9TuLPdgBB603CzGLLaGFkoy5CTSNpZhSgiA6xjyB8heeEflGeSZBUWt4TFqgkiW9JTLUeaSHWX2HuGA6nzPtO0klPnabOjmzdFljfwRKEpYuxjmfyIU0wz83CZUcUpgEJor7ZEq/5fV475QOeEaSKahxCKy+fBR3bVVURGkD97bOz51Lob4aVPrYknErpJ7AuOgQja+CH3sYR8QAwHeVwupmdGqSUwY66vnH+y+9eILmNrCNj4sc3l1wHMoc8kqS46FSEgW+ypQjPeC/MH6Z/A4nvoHjS7RHcVTuBnBlMiCcjLy7WIT0eDEKxUvkLVfBpJGosTT+xGBQcGw0rusRVlQ+G9hVi9dGEtZAa5ZZLUevR4VGPHiDI2JUi2MsgSJeVunxQPCD4YUV0/ZDALLVSnvO356l2GnHedx1rsh6a0cPjAte5dr5/9C971HqW1riicWiFob+I7GV1JXDY4noJMjc+2yzPkObmPd2LBymKgeic5Fjt7PqAMP14MKJ4I5SCZ8CgDLOV8TKF1GC+JuV9FgTSlmnHk3aA2uk8LggIEBdM=
 
 
