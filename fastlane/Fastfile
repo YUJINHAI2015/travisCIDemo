@@ -27,8 +27,7 @@ lane :beta do
   match(
 type: "adhoc", 
 keychain_password: "123456", 
-app_identifier: "com.kwgproperty.HeJingBigMemberYiHe",
-readonly: false
+app_identifier: "com.kwgproperty.HeJingBigMemberYiHe"
 )
 
   gym(scheme: "TravisCIDemo",export_method: "ad-hoc")
