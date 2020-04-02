@@ -1,11 +1,34 @@
 
-lane :archive do
+default_platform :ios
 
-  #puts "请输入版本描述信息："
-  #desc = STDIN.gets
+lane :archive do |op|
 
-  build_app(export_method: "ad-hoc", export_xcargs: "-allowProvisioningUpdates", output_directory: "~/Desktop/outputAPI")
+  puts "请输入版本描述信息："
+  desc = STDIN.gets
+
+  version = op[:version]
+
+  gym(
+	 scheme: "TravisCIDemo",
+	 export_method: "ad-hoc",
+	 export_xcargs: "-allowProvisioningUpdates",
+	 output_directory: "~/Desktop/outputAPI",
+   configuration: "Debug",  #Release会生成dsym文件，而Debug不会
+   output_name: version
+  )
+
+print <<`EOF`
+    ls -al
+EOF
+
+  #build_app(export_method: "ad-hoc", export_xcargs: "-allowProvisioningUpdates", output_directory: "~/Desktop/outputAPI")
   
 	
-  pgyer(api_key: "a215682d481d742271b61aabfe1baffe", user_key: "06c794bc27fbe97b626a3a21f12419f5",password: "12345678", update_description: "test ddd")
+  # pgyer(
+  #  api_key: "a215682d481d742271b61aabfe1baffe", 
+  #  user_key: "06c794bc27fbe97b626a3a21f12419f5",
+  #  password: "12345678", 
+  #  update_description: "#{desc}"
+  # )
 end
+
