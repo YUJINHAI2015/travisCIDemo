@@ -33,7 +33,7 @@ EOF
 end
 
 lane :beta do
-  match(type: "adhoc", keychain_password: "123456", app_identifier: "com.kwgproperty.HeJingBigMemberYiHe")
+  match(type: "adhoc", keychain_password: "123456", app_identifier: "com.kwgproperty.HeJingBigMemberYiHe", username: "1394162507@qq.com")
 
   gym(scheme: "TravisCIDemo",export_method: "ad-hoc")
 end
