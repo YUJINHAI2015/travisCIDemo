@@ -6,7 +6,8 @@ xcode_scheme: TravisCIDemo
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
 install:
- - bundle install
+ - sudo bundle install
+ - sudo bundle update fastlane
 before_script:
  - sudo gem install fastlane
  - sudo gem cleanup
