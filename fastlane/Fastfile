@@ -33,9 +33,9 @@ EOF
 end
 
 lane :beta do
-  match(type: "development", readonly: is_ci)
+  match(type: "ad-hoc", readonly: is_ci,keychain_password: "123456")
 
-  gym(scheme: "TravisCIDemo",export_method: "ad-hoc",keychain_password: "123456")
+  gym(scheme: "TravisCIDemo",export_method: "ad-hoc")
 end
 
 
