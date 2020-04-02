@@ -7,6 +7,8 @@ xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
 
 script:
+ - sudo gem install fastlane
+ - sudo gem cleanup
  - fastlane beta
     
 
