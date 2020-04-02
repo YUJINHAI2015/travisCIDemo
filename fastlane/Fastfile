@@ -1,4 +1,6 @@
 
+setup_travis
+
 default_platform :ios
 
 lane :archive do |op|
@@ -17,23 +19,16 @@ lane :archive do |op|
    output_name: version
   )
 
-print <<`EOF`
-    ls -al
-EOF
-
-  #build_app(export_method: "ad-hoc", export_xcargs: "-allowProvisioningUpdates", output_directory: "~/Desktop/outputAPI")
-  
-	
-  # pgyer(
-  #  api_key: "a215682d481d742271b61aabfe1baffe", 
-  #  user_key: "06c794bc27fbe97b626a3a21f12419f5",
-  #  password: "12345678", 
-  #  update_description: "#{desc}"
-  # )
 end
 
 lane :beta do
-  match(type: "adhoc", keychain_password: "123456", app_identifier: "com.kwgproperty.HeJingBigMemberYiHe")
+
+
+  match(
+type: "adhoc", 
+keychain_password: "123456", 
+app_identifier: "com.kwgproperty.HeJingBigMemberYiHe"
+)
 
   gym(scheme: "TravisCIDemo",export_method: "ad-hoc")
 end
