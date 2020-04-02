@@ -1,5 +1,6 @@
 
 setup_travis
+opt_out_usage
 
 default_platform :ios
 
