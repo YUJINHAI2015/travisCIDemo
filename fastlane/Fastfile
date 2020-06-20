@@ -12,8 +12,13 @@
 
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
+# 一定要关闭 Automatically manage signing
+# Iron-xzsl-dozt-hjbh
+# fastlaneTravisCI
 
 default_platform(:ios)
+ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "Iron-xzsl-dozt-hjbh"
+
 
 platform :ios do
   desc "Description of what the lane does"
@@ -31,10 +36,12 @@ platform :ios do
 
 	# https://docs.fastlane.tools/actions/build_app/
   	build_app(
-		export_method: "ad-hoc",
 	 	export_xcargs: "-allowProvisioningUpdates", 
+		export_method: "ad-hoc",
+		scheme: "TravisCIDemo",
 		output_directory: "~/Desktop/outputAPI"
 	)
+
 	# https://www.pgyer.com/doc/view/fastlane
 	pgyer(
 		api_key: "a215682d481d742271b61aabfe1baffe", 
