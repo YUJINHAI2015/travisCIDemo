@@ -4,6 +4,7 @@ os: osx
 xcode_project: TravisCIDemo.xcodeproj
 xcode_scheme: TravisCIDemo
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+
 setup_travis
 
 install:
