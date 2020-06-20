@@ -24,6 +24,8 @@ ENV["FASTLANE_SESSION"] = "---\n- !ruby/object:HTTP::Cookie\n  name: DES51fd2e5c
 
 platform :ios do
   desc "Description of what the lane does"
+  before_all do
+    setup_circle_ci
   lane :useMatch do
 
 	register_devices(devices_file: "./devices.txt")
