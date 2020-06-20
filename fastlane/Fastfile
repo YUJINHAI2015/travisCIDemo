@@ -1,39 +1,47 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
 
-#setup_travis
-#opt_out_usage
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
 
-default_platform :ios
+default_platform(:ios)
 
-lane :archive do |op|
+platform :ios do
+  desc "Description of what the lane does"
+  lane :useMatch do
 
-  puts "请输入版本描述信息："
-  desc = STDIN.gets
+	register_devices(devices_file: "./devices.txt")
 
-  version = op[:version]
+	# https://docs.fastlane.tools/actions/match/
+	match(
+		git_url: "https://gitee.com/yujinhai/HowToUseMatch.git",
+		type: "adhoc",
+		#readonly: true,
+		force_for_new_devices: true
+	)    
 
-  gym(
-	 scheme: "TravisCIDemo",
-	 export_method: "ad-hoc",
-	 export_xcargs: "-allowProvisioningUpdates",
-	 output_directory: "~/Desktop/outputAPI",
-   configuration: "Debug",  #Release会生成dsym文件，而Debug不会
-   output_name: version
-  )
+	# https://docs.fastlane.tools/actions/build_app/
+  	build_app(
+		export_method: "ad-hoc",
+	 	export_xcargs: "-allowProvisioningUpdates", 
+		output_directory: "~/Desktop/outputAPI"
+	)
+	# https://www.pgyer.com/doc/view/fastlane
+	pgyer(
+		api_key: "a215682d481d742271b61aabfe1baffe", 
+		user_key: "06c794bc27fbe97b626a3a21f12419f5",
+		password: "123456", 
+		update_description: "ss"
+	)
 
+  end
 end
-
-lane :beta do
-
-
-  match(
-type: "adhoc", 
-keychain_password: "123456", 
-app_identifier: "com.kwgproperty.HeJingBigMemberYiHe",
-readonly: true
-)
-
-  gym(scheme: "TravisCIDemo",export_method: "ad-hoc")
-end
-
-
-

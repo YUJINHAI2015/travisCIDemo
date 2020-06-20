@@ -7,4 +7,6 @@ target 'TravisCIDemo' do
 
   # Pods for TravisCIDemo
 
+#  pod 'Kingfisher', '~>4.10.1'
+
 end
