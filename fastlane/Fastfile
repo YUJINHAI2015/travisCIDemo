@@ -40,7 +40,7 @@ platform :ios do
 		api_key: "a215682d481d742271b61aabfe1baffe", 
 		user_key: "06c794bc27fbe97b626a3a21f12419f5",
 		password: "123456", 
-		update_description: "ss"
+		update_description: "ssssswww"
 	)
 
   end

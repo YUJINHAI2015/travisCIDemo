@@ -12,7 +12,7 @@ before_script:
  - sudo gem install fastlane
  - sudo gem cleanup
 script:
- - fastlane beta 
+ - fastlane useMatch
     
 
 
