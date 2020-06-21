@@ -39,7 +39,7 @@ platform :ios do
 		git_url: "https://gitee.com/yujinhai/HowToUseMatch.git",
 		git_user_email: "yujinhai2019@163.com",
 		git_full_name: "yujinhai",
-		git_basic_authorization: "f0a24a0501613a2c7a54df9aacac8e89",
+		git_basic_authorization: Base64.encode64("yujinhai: f0a24a0501613a2c7a54df9aacac8e89"),
 		type: "adhoc",
 		readonly: true,
 		force_for_new_devices: true
