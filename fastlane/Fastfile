@@ -37,6 +37,8 @@ platform :ios do
 	# https://docs.fastlane.tools/actions/match/
 	match(
 		git_url: "https://gitee.com/yujinhai/HowToUseMatch.git",
+		git_user_email: "yujinhai2019@163.com",
+		git_full_name: "yujinhai",
 		type: "adhoc",
 		readonly: true,
 		force_for_new_devices: true
