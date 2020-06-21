@@ -10,10 +10,11 @@ xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
 install:
  - sudo bundle install
-# - sudo bundle update fastlane
-#before_script:
-# - sudo gem install fastlane
-# - sudo gem cleanup
+ - sudo bundle update fastlane
+before_script:
+ - pod repo update
+ - sudo gem install fastlane
+ - sudo gem cleanup
 script:
  - fastlane useMatch
     
