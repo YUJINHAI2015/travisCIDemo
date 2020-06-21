@@ -1,4 +1,4 @@
-setup_travis
+#setup_travis
 
 osx_image: xcode 11.3
 language: swift
