@@ -36,7 +36,7 @@ platform :ios do
 
 	# https://docs.fastlane.tools/actions/match/
 	match(
-		git_url: "https://github.com/YUJINHAI2015/fakeJson.git",
+		git_url: "git@github.com:YUJINHAI2015/fakeJson.git",
 		git_basic_authorization: Base64. strict_encode64("YUJINHAI2015: b193d3585e2f6e194a50ad613f9cdf5ade6a32de"),
 		type: "adhoc",
 		readonly: true,
