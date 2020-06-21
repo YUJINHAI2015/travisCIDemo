@@ -1,3 +1,5 @@
+setup_travis
+
 osx_image: xcode 11.3
 language: swift
 os: osx
@@ -5,14 +7,13 @@ xcode_project: TravisCIDemo.xcodeproj
 xcode_scheme: TravisCIDemo
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 
-#setup_travis
 
 install:
  - sudo bundle install
- - sudo bundle update fastlane
-before_script:
- - sudo gem install fastlane
- - sudo gem cleanup
+# - sudo bundle update fastlane
+#before_script:
+# - sudo gem install fastlane
+# - sudo gem cleanup
 script:
  - fastlane useMatch
     
