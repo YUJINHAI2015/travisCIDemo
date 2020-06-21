@@ -41,6 +41,7 @@ platform :ios do
 		clone_branch_directly: true,
 		type: "adhoc",
 		#readonly: true,
+		generate_apple_certs: true,
 		force_for_new_devices: true
 	)    
 
