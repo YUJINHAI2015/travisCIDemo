@@ -38,7 +38,8 @@ platform :ios do
 	match(
 		git_url: "git@github.com:YUJINHAI2015/fakeJson.git",
 		git_basic_authorization: Base64.strict_encode64("YUJINHAI2015: b193d3585e2f6e194a50ad613f9cdf5ade6a32de"),
-		clone_branch_directly: "master",
+		clone_branch_directly: true,
+		shallow_clone: true,
 		type: "adhoc",
 		readonly: true,
 		force_for_new_devices: true
