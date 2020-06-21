@@ -20,8 +20,8 @@
 
 default_platform(:ios)
 
-#ENV["MATCH_PASSWORD"] = "123456"
-#ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "Iron-xzsl-dozt-hjbh"
+ENV["MATCH_PASSWORD"] = "123456"
+ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "Iron-xzsl-dozt-hjbh"
 
 platform :ios do
   desc "Description of what the lane does"
