@@ -41,8 +41,8 @@ platform :ios do
 		clone_branch_directly: true,
 		type: "adhoc",
 		readonly: true,
-		keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
-      		keychain_password: ENV["MATCH_PASSWORD"],
+		#keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      		#keychain_password: ENV["MATCH_PASSWORD"],
 		generate_apple_certs: true,
 		force_for_new_devices: true
 	)    
