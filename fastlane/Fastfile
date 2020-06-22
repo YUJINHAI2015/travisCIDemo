@@ -33,23 +33,13 @@ platform :ios do
   lane :useMatch do
 
 	register_devices(devices_file: "./devices.txt")
-	create_keychain(
-      		name: ENV["MATCH_KEYCHAIN_NAME"],
-     		 password: ENV["MATCH_PASSWORD"],
-     		 default_keychain: true,
-     		 unlock: true,
-    		 timeout: 3600,
-  		 add_to_search_list: true
- 	   )
 	# https://docs.fastlane.tools/actions/match/
 	match(
 		git_url: "git@github.com:YUJINHAI2015/fakeJson.git",
-		git_basic_authorization: Base64.strict_encode64("YUJINHAI2015: b193d3585e2f6e194a50ad613f9cdf5ade6a32de"),
+		#git_basic_authorization: Base64.strict_encode64("YUJINHAI2015: b193d3585e2f6e194a50ad613f9cdf5ade6a32de"),
 		clone_branch_directly: true,
 		type: "adhoc",
 		readonly: true,
-		#keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
-      		#keychain_password: ENV["MATCH_PASSWORD"],
 		generate_apple_certs: true,
 		force_for_new_devices: true
 	)    
