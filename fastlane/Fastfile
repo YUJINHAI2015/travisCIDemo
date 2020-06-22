@@ -40,7 +40,9 @@ platform :ios do
 		git_basic_authorization: Base64.strict_encode64("YUJINHAI2015: b193d3585e2f6e194a50ad613f9cdf5ade6a32de"),
 		clone_branch_directly: true,
 		type: "adhoc",
-		#readonly: true,
+		readonly: true,
+		keychain_name: ENV["MATCH_KEYCHAIN_NAME"],
+      		keychain_password: ENV["MATCH_PASSWORD"],
 		generate_apple_certs: true,
 		force_for_new_devices: true
 	)    
