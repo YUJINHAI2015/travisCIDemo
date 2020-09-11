@@ -15,7 +15,7 @@
 # 一定要关闭 Automatically manage signing
 
 # https://docs.fastlane.tools/best-practices/continuous-integration/
-
+# fastlane spaceauth -u user@email.com
 default_platform(:ios)
 
 platform :ios do
